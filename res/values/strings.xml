@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Toggles</string>
+    <string name="base_toggling_string">Toggling&#8230;</string>
+    <string name="voice_bluetooth_trigger">toggle bluetooth</string>
+    <string name="voice_wifi_trigger">toggle wifi</string>
+    <!-- Wifi states -->
+    <string name="toggling_wifi_on">Turning wifi on&#8230;</string>
+    <string name="toggled_wifi_on">Wifi turned on</string>
+    <string name="toggling_wifi_off">Turning wifi off&#8230;</string>
+    <string name="toggled_wifi_off">Wifi turned off</string>
+    <!-- Bluetooth states -->
+    <string name="toggling_bluetooth_on">Turning bluetooth on&#8230;</string>
+    <string name="toggled_bluetooth_on">Bluetooth turned on</string>
+    <string name="toggling_bluetooth_off">Turning bluetooth off&#8230;</string>
+    <string name="toggled_bluetooth_off">Bluetooth turned off</string>
+</resources>

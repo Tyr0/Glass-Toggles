@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tylercalderone.toggles"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_settings"
+        android:label="@string/app_name" >
+        
+        <activity
+            android:name="com.tylercalderone.toggles.ToggleActivity" >
+        </activity>
+        
+    	<activity-alias
+			android:name="com.tylercalderone.toggles.TOGGLE_WIFI"
+    	    android:label="Toggle WiFi"
+    	    android:icon="@drawable/ic_wifi"
+    	    android:targetActivity="com.tylercalderone.toggles.ToggleActivity" >
+    	    
+    	    <intent-filter>
+    	        <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+    	    </intent-filter>
+    	    <meta-data
+    	        android:name="com.google.android.glass.VoiceTrigger"
+    	        android:resource="@xml/voice_trigger_wifi" />
+		</activity-alias>
+		
+		<activity-alias
+			android:name="com.tylercalderone.toggles.TOGGLE_BLUETOOTH"
+    	    android:label="Toggle Bluetooth"
+    	    android:icon="@drawable/ic_bluetooth"
+    	    android:targetActivity="com.tylercalderone.toggles.ToggleActivity" >
+    	    
+    	    <intent-filter>
+    	        <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+    	    </intent-filter>
+    	    <meta-data
+    	        android:name="com.google.android.glass.VoiceTrigger"
+    	        android:resource="@xml/voice_trigger_bluetooth" />
+		</activity-alias>
+    	
+    </application>
+
+</manifest>

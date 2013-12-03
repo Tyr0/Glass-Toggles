@@ -1,0 +1,10 @@
+<resources>
+    <style name="GlassTheme" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:screenOrientation">landscape</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/black</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>

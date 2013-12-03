@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context=".ToggleActivity">
+
+	<TextView
+	    android:id="@+id/textView"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:gravity="center"
+	    android:text="@string/base_toggling_string" />
+
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:indeterminateOnly="true"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
