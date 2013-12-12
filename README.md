@@ -12,7 +12,7 @@ Install the [Android SDK](https://developer.android.com/sdk/index.html), if you 
 
 Install the [Glass Development Kit](https://developers.google.com/glass/develop/gdk/).
 
-Ensure your Glass hass "Debug Mode" enabled.
+Ensure your Glass has "Debug Mode" enabled.
 
 Compile to device.
 
@@ -21,6 +21,8 @@ Profit.
 ## Usage
 
 Toggling features on your device is as easy as `okay glass, toggle wifi`
+
+![Turning wifi off...](http://i.imgur.com/4x7cmcA.png)
 
 Currently, Glass Toggles only supports toggling WiFi and Bluetooth.
 To request more features, feel free to create an issue.
